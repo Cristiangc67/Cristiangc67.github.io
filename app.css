@@ -1,0 +1,70 @@
+.carousel-inner .carousel-item img {
+  height: 50em;
+}
+.headbanner {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(252, 69, 69, 1) 100%
+  );
+}
+.textbanner {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+.side {
+  height: 50em;
+}
+.suscribirse {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(252, 69, 69, 1) 100%
+  );
+  border: 0;
+  color: whitesmoke;
+  z-index: 2;
+}
+.nav-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+.nav-link:hover {
+  color: red;
+}
+.acceder {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(252, 69, 69, 1) 100%
+  );
+  color: whitesmoke;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid black;
+}
+.modal-footer .btn-primary{
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(252, 69, 69, 1) 100%
+  );
+}
+
+#banner2{
+  position: relative;
+}
+.overban{
+  position: absolute;
+  z-index: 1;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}

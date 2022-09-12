@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="pictures/brand.png" alt="" width="60" height="50" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-white justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white-50 " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Lista De Juegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Atribución De Derechos</a>
+              </li>
+            </ul>
+            <button type="button" class="acceder rounded-pill px-4 py-2 d-lg-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesión</button>
+          </div>
+          <button type="button" class="acceder rounded-pill px-4 py-2 d-none d-lg-inline-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Iniciar Sesión</button>
+
+        </div>
+      </nav>
+
+
+              <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+            <label for="loginemail">Email:</label>
+            <input type="email" class="form-control" id="loginemail">
+            
+          </div>
+          <div class="mb-3">
+            <label for="password">Contraseña:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer d-flex justify-content-between">
+        <button type="button" class="btn  float-start">Registrarse</button>
+        <div>
+         <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cerrar</button>
+         <button type="button" class="btn btn-primary">Iniciar Sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-lg-8 float-start d-none d-lg-inline-block">
+              <img src="pictures/carrousel2.jpg" class="d-inline-block w-100" alt="...">
+            </div>
+            <div class="side col-lg-4 float-end p-4 bg-dark d-flex flex-column justify-content-around text-center">
+              <h2 class="headbanner mt-5 mb-5 p-0">Juegos <br> On Demand </h2>
+              <span class="textbanner text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi alias quidem, voluptates harum sit sint? Assumenda earum rem, nesciunt soluta in quaerat consectetur repudiandae laborum nemo, nihil ad similique rerum!</span>
+              <div class="row justify-content-around mt-5 mb-5" >
+              <button type="button" class="suscribirse btn btn-primary col-4 btn-lg">Suscribirse</button>
+            </div>
+         </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overban col-lg-12 d-flex text-center justify-content-center text-black bg-danger w-100">
+              <span class="col-12 display-2">El futuro de los juegos</span>
+            </div>
+            <img src="pictures/carrou2.png" id="banner2" class="d-inline-block w-100" alt="...">
+            
+          </div>
+          <div class="carousel-item">
+            <img src="pictures/carrousel3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
+      
+        
+      <div class="col-6 d-block m-auto">
+        <h2 class="text-center mt-5 display-2">Gaming En Todos Lados</h2>
+        <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint cumque consectetur quo eum aspernatur incidunt, nisi enim neque dignissimos, tempora quam consequuntur minima esse aliquid nostrum natus doloremque at!
+          Ipsa praesentium eligendi sapiente quae nesciunt, officia similique adipisci repellat iusto! Quaerat aperiam, eius natus iusto tempora voluptate perspiciatis inventore molestias minima quisquam. Mollitia dolorem dolor et in dolore omnis!
+          Praesentium perspiciatis unde aut. Consequatur voluptatum non, asperiores quisquam obcaecati dolores possimus at, quod, inventore molestiae earum! Adipisci magni suscipit quae? Aliquid nisi, cupiditate cumque asperiores inventore itaque voluptatibus perspiciatis.</p>
+
+        <img src="pictures/diferentdevices.png" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-6 d-block m-auto">
+        <h2 class="text-center mt-5 display-2">Juega Con Amigos Online</h2>
+        <p class="mt-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus sint saepe explicabo error dolores nostrum est, molestias, placeat, optio ipsa omnis iusto nulla soluta necessitatibus. Quia nesciunt ab vero officiis?
+          Laborum et doloribus impedit voluptate! Nihil impedit quidem, ex accusamus molestias beatae. Impedit rem sapiente molestias magni, sit suscipit repudiandae fuga quibusdam nisi esse aliquid sint porro numquam, animi laborum.
+          Harum sapiente praesentium provident, eius repudiandae voluptas reiciendis beatae nemo ea, adipisci incidunt? Quaerat cum ipsa atque nostrum temporibus debitis nulla quo, ad itaque odit maiores possimus fugit. Alias, deserunt.
+        </p>
+       <img src="pictures/friends.png" class="img-fluid" alt="">
+      </div>
+      
+
+    </div>
+  </body>
+</html>
