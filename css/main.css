@@ -58,6 +58,15 @@
     rgba(252, 69, 69, 1) 100%
   );
 }
+.modal-footer .btn-primary:hover{
+  background: rgb(99, 44, 136);
+  background: linear-gradient(
+    90deg,
+    rgba(99, 44, 136, 1) 0%,
+    rgba(220, 55, 55, 1) 100%
+  );
+  
+}
 
 #banner2{
   position: relative;
@@ -67,4 +76,26 @@
   z-index: 1;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+}
+
+footer {
+  padding: 5px 0px;
+  text-align: center;
+  color: #fff;
+}
+.social{
+  width: 6em;
+  height: 4em;
+  margin-top: 10px;
+  padding: 0 15px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.social:hover{
+  filter: grayscale(0%);
+}
+
+.nav-link:hover{
+  text-shadow: 0 0 10px  rgb(216, 3, 216);
 }
